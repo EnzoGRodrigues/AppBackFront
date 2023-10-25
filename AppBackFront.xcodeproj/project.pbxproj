@@ -12,6 +12,7 @@
 		382692932A9D974B0067AA7F /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 382692922A9D974B0067AA7F /* LoginVC.swift */; };
 		382692982A9D974C0067AA7F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 382692972A9D974C0067AA7F /* Assets.xcassets */; };
 		3826929B2A9D974C0067AA7F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 382692992A9D974C0067AA7F /* LaunchScreen.storyboard */; };
+		3826FCB82AE8977200813FBE /* AlertController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3826FCB72AE8977200813FBE /* AlertController.swift */; };
 		3829C82F2AA4DA7C00E19808 /* LoginScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3829C82E2AA4DA7C00E19808 /* LoginScreen.swift */; };
 		38C142982ADAC2D2008050CF /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 38C142972ADAC2D2008050CF /* GoogleService-Info.plist */; };
 		38C142A72ADAC44A008050CF /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 38C142A62ADAC44A008050CF /* FirebaseAuth */; };
@@ -28,6 +29,7 @@
 		382692972A9D974C0067AA7F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3826929A2A9D974C0067AA7F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3826929C2A9D974C0067AA7F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3826FCB72AE8977200813FBE /* AlertController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertController.swift; sourceTree = "<group>"; };
 		3829C82E2AA4DA7C00E19808 /* LoginScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginScreen.swift; sourceTree = "<group>"; };
 		38C142972ADAC2D2008050CF /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		38C142D22ADAC72C008050CF /* UIViewController + Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController + Extension.swift"; sourceTree = "<group>"; };
@@ -66,6 +68,7 @@
 		3826928D2A9D974B0067AA7F /* AppBackFront */ = {
 			isa = PBXGroup;
 			children = (
+				3826FCB62AE8973D00813FBE /* Alert */,
 				38C142D02ADAC6EF008050CF /* Utils */,
 				38C142932ADAC066008050CF /* Login */,
 				3826928E2A9D974B0067AA7F /* AppDelegate.swift */,
@@ -76,6 +79,14 @@
 				3826929C2A9D974C0067AA7F /* Info.plist */,
 			);
 			path = AppBackFront;
+			sourceTree = "<group>";
+		};
+		3826FCB62AE8973D00813FBE /* Alert */ = {
+			isa = PBXGroup;
+			children = (
+				3826FCB72AE8977200813FBE /* AlertController.swift */,
+			);
+			path = Alert;
 			sourceTree = "<group>";
 		};
 		38C142932ADAC066008050CF /* Login */ = {
@@ -202,6 +213,7 @@
 				38C142D32ADAC72C008050CF /* UIViewController + Extension.swift in Sources */,
 				38C142D52ADACB83008050CF /* String + Extension.swift in Sources */,
 				3829C82F2AA4DA7C00E19808 /* LoginScreen.swift in Sources */,
+				3826FCB82AE8977200813FBE /* AlertController.swift in Sources */,
 				3826928F2A9D974B0067AA7F /* AppDelegate.swift in Sources */,
 				382692912A9D974B0067AA7F /* SceneDelegate.swift in Sources */,
 			);
