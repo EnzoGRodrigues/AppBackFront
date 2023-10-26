@@ -16,6 +16,7 @@
 		3826FCBB2AE89B9700813FBE /* TabBarVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3826FCBA2AE89B9700813FBE /* TabBarVC.swift */; };
 		3826FCBF2AE89C0A00813FBE /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3826FCBE2AE89C0A00813FBE /* HomeVC.swift */; };
 		3829C82F2AA4DA7C00E19808 /* LoginScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3829C82E2AA4DA7C00E19808 /* LoginScreen.swift */; };
+		38A3FBAF2AE9E65200AD9ABC /* HomeScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38A3FBAE2AE9E65200AD9ABC /* HomeScreen.swift */; };
 		38C142982ADAC2D2008050CF /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 38C142972ADAC2D2008050CF /* GoogleService-Info.plist */; };
 		38C142A72ADAC44A008050CF /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 38C142A62ADAC44A008050CF /* FirebaseAuth */; };
 		38C142AB2ADAC44A008050CF /* FirebaseCrashlytics in Frameworks */ = {isa = PBXBuildFile; productRef = 38C142AA2ADAC44A008050CF /* FirebaseCrashlytics */; };
@@ -35,6 +36,7 @@
 		3826FCBA2AE89B9700813FBE /* TabBarVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarVC.swift; sourceTree = "<group>"; };
 		3826FCBE2AE89C0A00813FBE /* HomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
 		3829C82E2AA4DA7C00E19808 /* LoginScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginScreen.swift; sourceTree = "<group>"; };
+		38A3FBAE2AE9E65200AD9ABC /* HomeScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreen.swift; sourceTree = "<group>"; };
 		38C142972ADAC2D2008050CF /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		38C142D22ADAC72C008050CF /* UIViewController + Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController + Extension.swift"; sourceTree = "<group>"; };
 		38C142D42ADACB83008050CF /* String + Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String + Extension.swift"; sourceTree = "<group>"; };
@@ -114,9 +116,18 @@
 		3826FCBD2AE89BDC00813FBE /* HomeVC */ = {
 			isa = PBXGroup;
 			children = (
+				38A3FBAD2AE9E64200AD9ABC /* Screen */,
 				3826FCBE2AE89C0A00813FBE /* HomeVC.swift */,
 			);
 			path = HomeVC;
+			sourceTree = "<group>";
+		};
+		38A3FBAD2AE9E64200AD9ABC /* Screen */ = {
+			isa = PBXGroup;
+			children = (
+				38A3FBAE2AE9E65200AD9ABC /* HomeScreen.swift */,
+			);
+			path = Screen;
 			sourceTree = "<group>";
 		};
 		38C142932ADAC066008050CF /* Login */ = {
@@ -245,6 +256,7 @@
 				3826FCBF2AE89C0A00813FBE /* HomeVC.swift in Sources */,
 				3829C82F2AA4DA7C00E19808 /* LoginScreen.swift in Sources */,
 				3826FCB82AE8977200813FBE /* AlertController.swift in Sources */,
+				38A3FBAF2AE9E65200AD9ABC /* HomeScreen.swift in Sources */,
 				3826928F2A9D974B0067AA7F /* AppDelegate.swift in Sources */,
 				3826FCBB2AE89B9700813FBE /* TabBarVC.swift in Sources */,
 				382692912A9D974B0067AA7F /* SceneDelegate.swift in Sources */,
