@@ -12,7 +12,8 @@ class HomeScreen: UIView {
     lazy var viewBackground: UIView = {
         let view = UIView()
         view.translatesAutoresizingMaskIntoConstraints = false
-        view.backgroundColor = UIColor(red: 26/255, green: 26/255, blue: 1/255, alpha: 1.0)
+//        view.backgroundColor = UIColor(red: 26/255, green: 26/255, blue: 1/255, alpha: 1.0)
+        view.backgroundColor = .green
         return view
     }()
     
@@ -36,7 +37,8 @@ class HomeScreen: UIView {
         let collectionView = UICollectionView(frame: CGRect.zero, collectionViewLayout: UICollectionViewLayout.init())
         collectionView.translatesAutoresizingMaskIntoConstraints = false
         collectionView.showsHorizontalScrollIndicator = false
-        collectionView.backgroundColor = UIColor(red: 26/255, green: 26/255, blue: 1/255, alpha: 1.0)
+//        collectionView.backgroundColor = UIColor(red: 26/255, green: 26/255, blue: 1/255, alpha: 1.0)
+        collectionView.backgroundColor = .blue
         // TO DO: Register - chamar a classe da célula que vai popular a collectionView
         let layout = UICollectionViewFlowLayout()
         layout.sectionInset = UIEdgeInsets(top: 0, left: 24, bottom: 0, right: 24) //serve para dizer que quando a collectionView nascer, a célula vai conter 24 de distancia no lado esquerdo e direito.
@@ -49,13 +51,29 @@ class HomeScreen: UIView {
         let tableView = UITableView()
         tableView.translatesAutoresizingMaskIntoConstraints = false
         // TO DO: REGISTER - chamar a classe da célula e registrar ela aqui
-        tableView.backgroundColor = UIColor(red: 26/255, green: 26/255, blue: 1/255, alpha: 1.0)
+//        tableView.backgroundColor = UIColor(red: 26/255, green: 26/255, blue: 1/255, alpha: 1.0)
+        tableView.backgroundColor = .yellow
         tableView.separatorStyle = .none
         return tableView
     }()
     
+    func configTableViewProtocols(delegate: UITableViewDelegate, dataSource: UITableViewDataSource){
+        tableView.delegate = delegate
+        tableView.dataSource = dataSource
+    }
+    
+    func configCollectionViewProtocols(delegate: UICollectionViewDelegate, dataSource: UICollectionViewDataSource){
+        collectionView.delegate = delegate
+        collectionView.dataSource = dataSource
+    }
+    
+    func configSearchBarDelegate(delegate: UISearchBarDelegate){
+        searchBar.delegate = delegate
+    }
+    
     override init(frame: CGRect) {
         super.init(frame: frame)
+        backgroundColor = UIColor(red: 26/255, green: 26/255, blue: 1/255, alpha: 1.0)
         addViews()
         configConstrains()
     }
@@ -74,12 +92,12 @@ class HomeScreen: UIView {
     
     func configConstrains(){
         NSLayoutConstraint.activate([
-            viewBackground.topAnchor.constraint(equalTo: topAnchor),
+            viewBackground.topAnchor.constraint(equalTo: safeAreaLayoutGuide.topAnchor),
             viewBackground.leadingAnchor.constraint(equalTo: leadingAnchor),
             viewBackground.trailingAnchor.constraint(equalTo: trailingAnchor),
-            viewBackground.heightAnchor.constraint(equalToConstant: 220),
+            viewBackground.heightAnchor.constraint(equalToConstant: 200),
             
-            logoImageView.topAnchor.constraint(equalTo: viewBackground.topAnchor, constant: 45),
+            logoImageView.topAnchor.constraint(equalTo: viewBackground.topAnchor, constant: 5),
             logoImageView.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 24),
             logoImageView.heightAnchor.constraint(equalToConstant: 40),
             logoImageView.widthAnchor.constraint(equalToConstant: 40),

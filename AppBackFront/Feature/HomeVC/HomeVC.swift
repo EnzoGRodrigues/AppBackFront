@@ -7,6 +7,8 @@
 
 import UIKit
 
+
+
 class HomeVC: UIViewController {
     
     var screen : HomeScreen?
@@ -14,6 +16,10 @@ class HomeVC: UIViewController {
     override func loadView() {
         screen = HomeScreen()
         view = screen
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        navigationController?.isNavigationBarHidden = true
     }
 
     override func viewDidLoad() {
