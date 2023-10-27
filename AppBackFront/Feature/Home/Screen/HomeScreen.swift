@@ -12,8 +12,8 @@ class HomeScreen: UIView {
     lazy var viewBackground: UIView = {
         let view = UIView()
         view.translatesAutoresizingMaskIntoConstraints = false
-//        view.backgroundColor = UIColor(red: 26/255, green: 26/255, blue: 1/255, alpha: 1.0)
-        view.backgroundColor = .green
+        view.backgroundColor = UIColor(red: 26/255, green: 26/255, blue: 1/255, alpha: 1.0)
+//        view.backgroundColor = .green
         return view
     }()
     
@@ -37,8 +37,8 @@ class HomeScreen: UIView {
         let collectionView = UICollectionView(frame: CGRect.zero, collectionViewLayout: UICollectionViewLayout.init())
         collectionView.translatesAutoresizingMaskIntoConstraints = false
         collectionView.showsHorizontalScrollIndicator = false
-//        collectionView.backgroundColor = UIColor(red: 26/255, green: 26/255, blue: 1/255, alpha: 1.0)
-        collectionView.backgroundColor = .blue
+        collectionView.backgroundColor = UIColor(red: 26/255, green: 26/255, blue: 1/255, alpha: 1.0)
+//        collectionView.backgroundColor = .blue
         // TO DO: Register - chamar a classe da célula que vai popular a collectionView
         let layout = UICollectionViewFlowLayout()
         layout.sectionInset = UIEdgeInsets(top: 0, left: 24, bottom: 0, right: 24) //serve para dizer que quando a collectionView nascer, a célula vai conter 24 de distancia no lado esquerdo e direito.
@@ -51,8 +51,8 @@ class HomeScreen: UIView {
         let tableView = UITableView()
         tableView.translatesAutoresizingMaskIntoConstraints = false
         // TO DO: REGISTER - chamar a classe da célula e registrar ela aqui
-//        tableView.backgroundColor = UIColor(red: 26/255, green: 26/255, blue: 1/255, alpha: 1.0)
-        tableView.backgroundColor = .yellow
+        tableView.backgroundColor = UIColor(red: 26/255, green: 26/255, blue: 1/255, alpha: 1.0)
+//        tableView.backgroundColor = .yellow
         tableView.separatorStyle = .none
         return tableView
     }()
