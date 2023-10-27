@@ -14,6 +14,11 @@ enum Error: Swift.Error{ //enum de erros.
     case errorRequest(AFError) //erro de request
 }
 
+enum TypeFetch{
+    case mock
+    case request
+}
+
 protocol GenericService: AnyObject{
     typealias completion <T> = (_ result: T, _ failure: Error?) -> Void /*
                                                                          O typealias serve para "chamar alguem pelo apelido". Ao invés de chamar alguem pelo nome completo, nós chamamos alguém pelo apelido, e é isso que acontece com o typealias, ao inves de ter todo esse trecho de código (_ result: T, _ failure: Error?) -> Void, eu chamo somente o completion, porque o completion vai conter todo o código nele. Ou seja, o completion é o apelido do código.
