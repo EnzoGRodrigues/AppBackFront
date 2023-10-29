@@ -27,6 +27,8 @@
 		38C142AB2ADAC44A008050CF /* FirebaseCrashlytics in Frameworks */ = {isa = PBXBuildFile; productRef = 38C142AA2ADAC44A008050CF /* FirebaseCrashlytics */; };
 		38C142D32ADAC72C008050CF /* UIViewController + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38C142D22ADAC72C008050CF /* UIViewController + Extension.swift */; };
 		38C142D52ADACB83008050CF /* String + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38C142D42ADACB83008050CF /* String + Extension.swift */; };
+		38C4526F2AEE8940002C50E5 /* NftFilterCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38C4526E2AEE8940002C50E5 /* NftFilterCollectionViewCell.swift */; };
+		38C452722AEE8977002C50E5 /* NftFilterCollectionViewCellScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38C452712AEE8977002C50E5 /* NftFilterCollectionViewCellScreen.swift */; };
 		3C2B85533C0AE2291E72F2DC /* Pods_AppBackFront.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 000CE337F84D0BED9CA08842 /* Pods_AppBackFront.framework */; };
 /* End PBXBuildFile section */
 
@@ -53,6 +55,8 @@
 		38C142972ADAC2D2008050CF /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		38C142D22ADAC72C008050CF /* UIViewController + Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController + Extension.swift"; sourceTree = "<group>"; };
 		38C142D42ADACB83008050CF /* String + Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String + Extension.swift"; sourceTree = "<group>"; };
+		38C4526E2AEE8940002C50E5 /* NftFilterCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NftFilterCollectionViewCell.swift; sourceTree = "<group>"; };
+		38C452712AEE8977002C50E5 /* NftFilterCollectionViewCellScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NftFilterCollectionViewCellScreen.swift; sourceTree = "<group>"; };
 		FA43C9527199C97FFE9D19BE /* Pods-AppBackFront.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AppBackFront.release.xcconfig"; path = "Target Support Files/Pods-AppBackFront/Pods-AppBackFront.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -176,6 +180,7 @@
 		3826FCBC2AE89BC400813FBE /* Feature */ = {
 			isa = PBXGroup;
 			children = (
+				38C4526C2AEE8915002C50E5 /* Cells */,
 				3826FCBD2AE89BDC00813FBE /* Home */,
 				38C142932ADAC066008050CF /* Login */,
 			);
@@ -240,6 +245,31 @@
 				38C142D42ADACB83008050CF /* String + Extension.swift */,
 			);
 			path = Extension;
+			sourceTree = "<group>";
+		};
+		38C4526C2AEE8915002C50E5 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				38C4526D2AEE891B002C50E5 /* NftFilter */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		38C4526D2AEE891B002C50E5 /* NftFilter */ = {
+			isa = PBXGroup;
+			children = (
+				38C452702AEE895C002C50E5 /* Screen */,
+				38C4526E2AEE8940002C50E5 /* NftFilterCollectionViewCell.swift */,
+			);
+			path = NftFilter;
+			sourceTree = "<group>";
+		};
+		38C452702AEE895C002C50E5 /* Screen */ = {
+			isa = PBXGroup;
+			children = (
+				38C452712AEE8977002C50E5 /* NftFilterCollectionViewCellScreen.swift */,
+			);
+			path = Screen;
 			sourceTree = "<group>";
 		};
 		BA14CF3EF04B1378BDE06683 /* Pods */ = {
@@ -380,6 +410,8 @@
 				38C142D52ADACB83008050CF /* String + Extension.swift in Sources */,
 				3826FCBF2AE89C0A00813FBE /* HomeVC.swift in Sources */,
 				3829C82F2AA4DA7C00E19808 /* LoginScreen.swift in Sources */,
+				38C4526F2AEE8940002C50E5 /* NftFilterCollectionViewCell.swift in Sources */,
+				38C452722AEE8977002C50E5 /* NftFilterCollectionViewCellScreen.swift in Sources */,
 				3824B1E22AEB437A00857679 /* GenericService.swift in Sources */,
 				3824B1E02AEB433900857679 /* HomeService.swift in Sources */,
 				3826FCB82AE8977200813FBE /* AlertController.swift in Sources */,

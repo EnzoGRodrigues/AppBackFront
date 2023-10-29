@@ -39,7 +39,7 @@ class HomeScreen: UIView {
         collectionView.showsHorizontalScrollIndicator = false
         collectionView.backgroundColor = UIColor(red: 26/255, green: 26/255, blue: 1/255, alpha: 1.0)
 //        collectionView.backgroundColor = .blue
-        // TO DO: Register - chamar a classe da célula que vai popular a collectionView
+        collectionView.register(NftFilterCollectionViewCell.self, forCellWithReuseIdentifier: NftFilterCollectionViewCell.identifier)// TO DO: Register - chamar a classe da célula que vai popular a collectionView
         let layout = UICollectionViewFlowLayout()
         layout.sectionInset = UIEdgeInsets(top: 0, left: 24, bottom: 0, right: 24) //serve para dizer que quando a collectionView nascer, a célula vai conter 24 de distancia no lado esquerdo e direito.
         layout.scrollDirection = .horizontal
@@ -95,7 +95,7 @@ class HomeScreen: UIView {
             viewBackground.topAnchor.constraint(equalTo: safeAreaLayoutGuide.topAnchor),
             viewBackground.leadingAnchor.constraint(equalTo: leadingAnchor),
             viewBackground.trailingAnchor.constraint(equalTo: trailingAnchor),
-            viewBackground.heightAnchor.constraint(equalToConstant: 200),
+            viewBackground.heightAnchor.constraint(equalToConstant: 160),
             
             logoImageView.topAnchor.constraint(equalTo: viewBackground.topAnchor, constant: 5),
             logoImageView.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 24),
