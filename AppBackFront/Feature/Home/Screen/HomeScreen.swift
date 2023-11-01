@@ -50,7 +50,7 @@ class HomeScreen: UIView {
     lazy var tableView: UITableView = {
         let tableView = UITableView()
         tableView.translatesAutoresizingMaskIntoConstraints = false
-        // TO DO: REGISTER - chamar a classe da célula e registrar ela aqui
+        tableView.register(NftTableViewCell.self, forCellReuseIdentifier: NftTableViewCell.identifier)// TO DO: REGISTER - chamar a classe da célula e registrar ela aqui
         tableView.backgroundColor = UIColor(red: 26/255, green: 26/255, blue: 1/255, alpha: 1.0)
 //        tableView.backgroundColor = .yellow
         tableView.separatorStyle = .none
