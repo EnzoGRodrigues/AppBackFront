@@ -21,6 +21,8 @@
 		3826FCBB2AE89B9700813FBE /* TabBarVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3826FCBA2AE89B9700813FBE /* TabBarVC.swift */; };
 		3826FCBF2AE89C0A00813FBE /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3826FCBE2AE89C0A00813FBE /* HomeVC.swift */; };
 		3829C82F2AA4DA7C00E19808 /* LoginScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3829C82E2AA4DA7C00E19808 /* LoginScreen.swift */; };
+		384B18602B6C86DC00F7F57D /* NftImageTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 384B185F2B6C86DC00F7F57D /* NftImageTableViewCell.swift */; };
+		384B18632B6C876E00F7F57D /* NftImageTableViewCellScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 384B18622B6C876E00F7F57D /* NftImageTableViewCellScreen.swift */; };
 		3850DAD42AF1CB1A00BC4629 /* NftTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3850DAD32AF1CB1A00BC4629 /* NftTableViewCell.swift */; };
 		3850DAD72AF1CB8300BC4629 /* NftTableViewCellScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3850DAD62AF1CB8300BC4629 /* NftTableViewCellScreen.swift */; };
 		38944EB32B291792004846FA /* NftDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38944EB22B291792004846FA /* NftDetailVC.swift */; };
@@ -56,6 +58,8 @@
 		3826FCBA2AE89B9700813FBE /* TabBarVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarVC.swift; sourceTree = "<group>"; };
 		3826FCBE2AE89C0A00813FBE /* HomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
 		3829C82E2AA4DA7C00E19808 /* LoginScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginScreen.swift; sourceTree = "<group>"; };
+		384B185F2B6C86DC00F7F57D /* NftImageTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NftImageTableViewCell.swift; sourceTree = "<group>"; };
+		384B18622B6C876E00F7F57D /* NftImageTableViewCellScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NftImageTableViewCellScreen.swift; sourceTree = "<group>"; };
 		3850DAD32AF1CB1A00BC4629 /* NftTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NftTableViewCell.swift; sourceTree = "<group>"; };
 		3850DAD62AF1CB8300BC4629 /* NftTableViewCellScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NftTableViewCellScreen.swift; sourceTree = "<group>"; };
 		38944EB22B291792004846FA /* NftDetailVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NftDetailVC.swift; sourceTree = "<group>"; };
@@ -208,6 +212,23 @@
 			path = Home;
 			sourceTree = "<group>";
 		};
+		384B185E2B6C86BF00F7F57D /* NftImageTableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				384B18612B6C875F00F7F57D /* Screen */,
+				384B185F2B6C86DC00F7F57D /* NftImageTableViewCell.swift */,
+			);
+			path = NftImageTableViewCell;
+			sourceTree = "<group>";
+		};
+		384B18612B6C875F00F7F57D /* Screen */ = {
+			isa = PBXGroup;
+			children = (
+				384B18622B6C876E00F7F57D /* NftImageTableViewCellScreen.swift */,
+			);
+			path = Screen;
+			sourceTree = "<group>";
+		};
 		3850DAD22AF1CAE000BC4629 /* NftTableViewCell */ = {
 			isa = PBXGroup;
 			children = (
@@ -304,6 +325,7 @@
 		38C4526C2AEE8915002C50E5 /* Cells */ = {
 			isa = PBXGroup;
 			children = (
+				384B185E2B6C86BF00F7F57D /* NftImageTableViewCell */,
 				3850DAD22AF1CAE000BC4629 /* NftTableViewCell */,
 				38C4526D2AEE891B002C50E5 /* NftFilterCollectionViewCell */,
 			);
@@ -460,6 +482,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				382692932A9D974B0067AA7F /* LoginVC.swift in Sources */,
+				384B18632B6C876E00F7F57D /* NftImageTableViewCellScreen.swift in Sources */,
 				3824B1DC2AEB41D600857679 /* HomeViewModel.swift in Sources */,
 				38C142D32ADAC72C008050CF /* UIViewController + Extension.swift in Sources */,
 				38C142D52ADACB83008050CF /* String + Extension.swift in Sources */,
@@ -471,6 +494,7 @@
 				3824B1E02AEB433900857679 /* HomeService.swift in Sources */,
 				3826FCB82AE8977200813FBE /* AlertController.swift in Sources */,
 				38A3FBAF2AE9E65200AD9ABC /* HomeScreen.swift in Sources */,
+				384B18602B6C86DC00F7F57D /* NftImageTableViewCell.swift in Sources */,
 				3824B1E82AEB48CF00857679 /* NFTData.swift in Sources */,
 				3826928F2A9D974B0067AA7F /* AppDelegate.swift in Sources */,
 				38944EB62B2917CC004846FA /* NftDetailViewModel.swift in Sources */,
